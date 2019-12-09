@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "screenshot/flange-bolt-chart-app.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -26,7 +26,11 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img 
+    fluid={data.placeholderImage.childImageSharp.fluid} 
+    alt="Flange Bolt Chart app: With bolt lengths, wrench sizes, and torque patterns."
+    title="Flange Bolt Chart app"
+  />
 }
 
 export default Image
