@@ -3,8 +3,10 @@ module.exports = {
     title: `Flange Bolt Chart`,
     description: `Flange Bolt Size Chart and Torque Patterns. Lookup bolt lengths, wrench sizes, and torque patters using the Flange Bolt app.`,
     author: `@gatsbyjs`,
+    siteUrl: `https://www.flangeboltchart.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
