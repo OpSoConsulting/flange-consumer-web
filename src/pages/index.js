@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SEO 
       title="Flange Bolt Chart - Size & Torque" 
-      description="Flange Bolt Size Chart and Torque Patterns. Instant lookup using the Flange Bolt app. Find flange bolt size and torque patterns with three taps."
+      description="Flange Bolt Size Chart and Torque Patterns. Lookup bolt lengths, wrench sizes, and torque patters using the Flange Bolt app."
     />
     <div className={styles.heroContainer}>
       <div className={styles.textContainer}>

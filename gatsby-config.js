@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Flange Bolt Chart`,
+    description: `Flange Bolt Size Chart and Torque Patterns. Lookup bolt lengths, wrench sizes, and torque patters using the Flange Bolt app.`,
     author: `@gatsbyjs`,
   },
   plugins: [
