@@ -7,6 +7,7 @@ import Image from "../components/image"
 import AppStoreBadgeImage from "../components/appStoreBadgeImage"
 import SEO from "../components/seo"
 import tables from '../components/_tables';
+import sequences from '../services/torqueSequences';
 
 const IndexPage = () => (
   <Layout>
@@ -47,6 +48,15 @@ const IndexPage = () => (
       <tables.Class1500 />
       <h4>2500 LB. Flanges</h4>
       <tables.Class2500 />
+    </div>
+    <div className={styles.torquePatternsContainers}>
+      {
+        Object.keys(sequences).map((bolts) => (
+          <p>
+            <Link to={`${bolts}-bolt-torque-pattern`}>{bolts} Bolt Torque Pattern</Link>
+          </p>
+        ))
+      }
     </div>
     <div className={styles.aboutTheAppContainer}>
       <h3>About the App</h3>
