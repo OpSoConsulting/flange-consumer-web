@@ -18,7 +18,7 @@ const TorquePatternPageBody = ({ bolts }) => {
     <Layout>
       <SEO
         title={`${bolts} Bolt Torque Pattern`}
-        description={`Torque pattern for ${bolts} bolt flanges. Based on ANSI bolt pattern data.`}
+        description={`Torque pattern for ${bolts} bolt flanges. Bolt sequence: ${sequenceString}.`}
       />
       <Helmet>
         {/* inline script elements */}
